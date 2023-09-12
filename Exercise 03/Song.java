@@ -1,4 +1,4 @@
-package exercise02;
+package exercise03;
 
 public class Song {
     private String title;

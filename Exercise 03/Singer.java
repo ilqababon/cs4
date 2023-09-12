@@ -1,4 +1,4 @@
-package exercise02;
+package exercise03;
 
 public class Singer {
     // fields
@@ -6,6 +6,8 @@ public class Singer {
     private int noOfPerformances;
     private double earnings;
     private Song favoriteSong;
+
+    private static int totalPerformances = 0;
 
     // constructor
     public Singer(String name, int noOfPerformances, double earnings, Song favoriteSong) {
@@ -18,7 +20,16 @@ public class Singer {
     // methods
     public void performForAudience(int noOfPeople) {
         noOfPerformances++;
-        earnings += noOfPeople * 100;
+        totalPerformances++;
+        earnings += noOfPeople * 100.0;
+    }
+
+    public void performForAudience(Singer otherSinger, int noOfPeople) {
+        noOfPerformances++;
+        otherSinger.noOfPerformances++;
+        totalPerformances++;
+        earnings += noOfPeople * 50.0;
+        otherSinger.earnings += noOfPeople * 50.0;
     }
 
     public void changeFavSong(Song song) {
@@ -40,5 +51,9 @@ public class Singer {
 
     public Song getFavoriteSong() {
         return favoriteSong;
+    }
+
+    public static int getTotalPerformances() {
+        return totalPerformances;
     }
 }
