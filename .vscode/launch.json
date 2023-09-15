@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Exercise02",
+            "request": "launch",
+            "mainClass": "exercise02.Exercise02",
+            "projectName": "sillycsstuff_8bb3b2de"
+        },
+        {
+            "type": "java",
+            "name": "Exercise03",
+            "request": "launch",
+            "mainClass": "exercise03.Exercise03",
+            "projectName": "sillycsstuff_8bb3b2de"
+        },
+        {
+            "type": "java",
+            "name": "Exercise04",
+            "request": "launch",
+            "mainClass": "exercise04.Exercise04",
+            "projectName": "sillycsstuff_8bb3b2de"
+        },
+        {
+            "type": "java",
+            "name": "Exercise03",
+            "request": "launch",
+            "mainClass": "Exercise03",
+            "projectName": "sillycsstuff_8bb3b2de"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
