@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "RockPaperScissors",
+            "request": "launch",
+            "mainClass": "exercise04.RockPaperScissors",
+            "projectName": "sillycsstuff_8bb3b2de"
+        },
+        {
+            "type": "java",
             "name": "Exercise02",
             "request": "launch",
             "mainClass": "exercise02.Exercise02",
