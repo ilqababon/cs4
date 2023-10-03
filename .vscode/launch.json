@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "oct3",
+            "request": "launch",
+            "mainClass": "lectureNotes.oct3",
+            "projectName": "sillycsstuff_8bb3b2de"
+        },
+        {
+            "type": "java",
+            "name": "sept15",
+            "request": "launch",
+            "mainClass": "lectureNotes.sept15",
+            "projectName": "sillycsstuff_8bb3b2de"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "longtestP2.Main",
+            "projectName": "sillycsstuff_8bb3b2de"
+        },
+        {
+            "type": "java",
+            "name": "longtest",
+            "request": "launch",
+            "mainClass": "longtest.longtest",
+            "projectName": "sillycsstuff_8bb3b2de"
+        },
+        {
+            "type": "java",
             "name": "RockPaperScissors",
             "request": "launch",
             "mainClass": "exercise04.RockPaperScissors",
