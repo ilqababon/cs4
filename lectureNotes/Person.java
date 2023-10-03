@@ -92,13 +92,16 @@ public class Person {
 
     // get person from personList by using Person.getName()
     public static Person getPerson(String name) {
+        boolean found = false;
         // iterate through every item in ArrayList
         for (Person p : personList) {
             if (p.name.equals(name)) {
+                found = true;
                 return p;
             }
         }
         // if person is not found -- must be after iterating through every element in ArrayList
+        if (!found) System.out.printf("No person named %s. %n", name);
         return null;
     }
 }

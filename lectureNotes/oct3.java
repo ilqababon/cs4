@@ -33,5 +33,7 @@ public class oct3 {
         System.out.println(personList.get(0).getName());
         
         // if we want to add every instance of class to an ArrayList when it gets created, we can add a private field to the person class itself
+
+        Person.getPerson("Jane");
     }
 }
