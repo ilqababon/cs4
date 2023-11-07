@@ -4,13 +4,14 @@ import java.util.ArrayList;
 
 public class Monster {
     private final String name, type, strongAgainst, weakAgainst;
-    private int maxHP, hp, atk, def, xp, lvl;
+    private int maxHP, xp, lvl;
+    protected int hp, atk, def;
     private boolean guard, charge;
     private static ArrayList<Monster> monsterList = new ArrayList<>();
 
-    public Monster(String n, String t, String s, String w, int m, int base){
-        name = n;
-        type = t;
+    public Monster(String name, String type, String s, String w, int m, int base){
+        this.name = name;
+        this.type = type;
         strongAgainst = s;
         weakAgainst = w;
         maxHP = m;
