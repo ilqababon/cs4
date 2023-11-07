@@ -2,10 +2,6 @@ package exercise06;
 
 public class Main {
     public static void main(String[] args) {
-        //Create the main method in a separate java file. In the main method, create three Monsters, one of each type 
-        //(you may choose the values for the Monsters). Simulate 3 separate battles, Grass vs Fire, Fire vs Water, and 
-        //Water vs Grass. Create a loop so that they repeatedly attack each other until one or both HP is reduced to 0. 
-        //There is no need for user input in the main method, so you may hardcode the entire process.
 
         Monster chikorita = new GrassType("Chikorita", 23, 45);
         Monster cyndaquil = new FireType("Cyndaquil", 39, 52);
@@ -28,6 +24,11 @@ public class Main {
             System.out.println("Chikorita won round 1!");
         }
 
+        System.out.print("\n");
+
+        chikorita.resetHealth();
+        cyndaquil.resetHealth();
+
         System.out.println("Round 2: Chikorita vs Totodile");
         System.out.println("==============================");
         while (chikorita.getHP() != 0 && totodile.getHP() != 0) {
@@ -45,7 +46,12 @@ public class Main {
             System.out.println("Chikorita won round 2!");
         }
 
-        System.out.println("Round 2: Cyndaquil vs Totodile");
+        System.out.print("\n");
+
+        chikorita.resetHealth();
+        totodile.resetHealth();
+
+        System.out.println("Round 3: Cyndaquil vs Totodile");
         System.out.println("==============================");
         while (cyndaquil.getHP() != 0 && totodile.getHP() != 0) {
             cyndaquil.attack(totodile);
@@ -56,10 +62,15 @@ public class Main {
             System.out.println("This round is a draw.");
         }
         else if (cyndaquil.getHP() == 0) {
-            System.out.println("Totodile won round 2!");
+            System.out.println("Totodile won round 3!");
         }
         else {
-            System.out.println("Chikorita won round 2!");
+            System.out.println("Cyndaquil won round 3!");
         }
+
+        System.out.print("\n");
+
+        cyndaquil.resetHealth();
+        totodile.resetHealth();
     }
 }
