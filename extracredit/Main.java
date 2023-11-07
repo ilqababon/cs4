@@ -5,19 +5,19 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args){
-        ArrayList<Assignment> array1;
-        ArrayList<Assignment> array2;
-        ArrayList<Assignment> array3;
+        ArrayList<Assignment> array1 = new ArrayList<Assignment>();
+        ArrayList<Assignment> array2 = new ArrayList<Assignment>();
+        ArrayList<Assignment> array3 = new ArrayList<Assignment>();
 
         Student s1 = new Student("s1", array1);
         Student s2 = new Student("s2", array2);
         Student s3 = new Student("s3", array3);
 
-        ArrayList<Student> array4;
+        ArrayList<Student> array4 = new ArrayList<Student>();
         array4.add(s1);
         array4.add(s2);
 
-        ArrayList<Student> array5;
+        ArrayList<Student> array5 = new ArrayList<Student>();
         array5.add(s3);
 
         Section c1 = new Section("c1", array4);
@@ -27,14 +27,14 @@ public class Main {
         Assignment a2 = new Assignment("a2", 3);
         Assignment a3 = new Assignment("a3", 5);
 
-        ArrayList<Section> array6;
+        ArrayList<Section> array6 = new ArrayList<Section>();
         array6.add(c1);
         array6.add(c2);
 
-        ArrayList<Section> array7;
+        ArrayList<Section> array7 = new ArrayList<Section>();
         array7.add(c2);
 
-        ArrayList<Section> array8;
+        ArrayList<Section> array8 = new ArrayList<Section>();
         array8.add(c1);
 
         Teacher t1 = new Teacher("t1", "CS", array6);
