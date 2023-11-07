@@ -12,10 +12,6 @@ import java.util.Scanner;
  * @author PHOTON
  */
 public class sept15 {
-
-    /**
-     * @param args the command line arguments
-     */
     
     // static keyword means that a method is not attached to any objects, but is rather attached to the class
     public static void main(String[] args) {
@@ -50,5 +46,5 @@ public class sept15 {
         System.out.println("Hi.");
         System.out.printf("Hello, my name is %s. I am %d years old. I have %.2f pesos \n", name, age, money);
     }
-    
+
 }

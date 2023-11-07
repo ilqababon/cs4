@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "nov7",
+            "request": "launch",
+            "mainClass": "lectureNotes.nov7",
+            "projectName": "sillycsstuff_8bb3b2de"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "sa2photonababoniris.Main",
+            "projectName": "sillycsstuff_8bb3b2de"
+        },
+        {
+            "type": "java",
             "name": "StoreSim",
             "request": "launch",
             "mainClass": "StoreSim",

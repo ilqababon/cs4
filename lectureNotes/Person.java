@@ -15,7 +15,8 @@ public class Person {
     // by default, all fields are private, aka these fields cannot be accessed outside of this class
     private String name;
     private int age;
-    private double money;
+    // allows subclasses and other classes in the package to access the variable
+    protected double money;
     
     private Person friend;
     

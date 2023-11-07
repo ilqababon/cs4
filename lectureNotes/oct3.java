@@ -2,6 +2,7 @@ package lectureNotes;
 import java.util.ArrayList;
 
 public class oct3 {
+
     public static void main(String[] args) {
         // ways of declaring arrays
         // method 1 - nonprimitive array

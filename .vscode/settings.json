@@ -13,7 +13,8 @@
         "string_view": "cpp",
         "unordered_map": "cpp",
         "__string": "cpp",
-        "__locale": "cpp"
+        "__locale": "cpp",
+        "complex": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
