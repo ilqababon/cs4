@@ -11,5 +11,6 @@ public class FireType extends Monster {
     public void special() {
         this.atk += 2;
         this.hp = (int)(0.9 * this.getMaxHP());
+        System.out.println(this.getName() + " did a pose.");
     }
 }
