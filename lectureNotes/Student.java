@@ -30,4 +30,11 @@ public class Student extends Person {
         // option 2: use 'protected' instead of 'private' in superclass:
         this.money += 1000;
     }
+
+    // nov 14 -- will get an error since Person class is now abstract
+    // either make the Student class itself into an abstract class, or implement the abstract method
+    //@Override
+    //public void work() {
+        // TODO
+    //}
 }

@@ -18,5 +18,6 @@ public class nov14 {
             their own classes and a Touchscreen interface can be added to each subclass
     */
 
-    
+    // sample main method code is in nov7.java
+    // sample abstraction code is in Person.java
 }
