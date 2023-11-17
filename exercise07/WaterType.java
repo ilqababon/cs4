@@ -12,16 +12,4 @@ public class WaterType extends Monster {
         this.def += 2;
         this.hp = (int)(0.9 * this.getMaxHP());
     }
-
-    @Override
-    public void interact() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'interact'");
-    }
-
-    @Override
-    public void inspect(Interactive i) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'inspect'");
-    }
 }

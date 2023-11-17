@@ -13,16 +13,4 @@ public class FireType extends Monster {
         this.hp = (int)(0.9 * this.getMaxHP());
         System.out.println(this.getName() + " did a pose.");
     }
-
-    @Override
-    public void interact() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'interact'");
-    }
-
-    @Override
-    public void inspect(Interactive i) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'inspect'");
-    }
 }
