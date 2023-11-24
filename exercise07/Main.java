@@ -8,8 +8,8 @@ public class Main {
         NPC manu = new NPC("Manu");
         Location hoenn = new Location("Hoenn", "Berry");
 
-        chikorita.interact();
-        manu.interact();
-        hoenn.interact();
+        xangel.inspect(chikorita);
+        xangel.inspect(manu);
+        xangel.inspect(hoenn);
     }
 }

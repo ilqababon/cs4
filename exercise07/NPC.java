@@ -23,8 +23,4 @@ public class NPC extends Character implements Interactive {
     public void interact() {
         System.out.println(dialog);
     }
-    @Override
-    public void inspect(Interactive i) {
-        interact();
-    }
 }

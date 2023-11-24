@@ -33,8 +33,4 @@ public class Location implements Interactive {
     public void interact() {
         System.out.println(localSpecialty);
     }
-    @Override
-    public void inspect(Interactive i) {
-        interact();
-    }
 }

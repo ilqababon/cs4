@@ -118,10 +118,6 @@ public abstract class Monster implements Interactive {
     public void interact() {
         System.out.println("Name - " + name + ", Level - " + lvl);
     }
-    @Override
-    public void inspect(Interactive i) {
-        interact();
-    }
 
 }
 
