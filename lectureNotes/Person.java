@@ -88,7 +88,15 @@ public class Person {
 
     // get person from personList by using indexing
     public static Person getPerson(int index) {
-        return personList.get(index);
+        // 12/01/2023 lecture - Exception handling
+        Person p = null;
+        try {
+            p = personList.get(index);
+        }
+        catch(IndexOutOfBoundsException e) {
+            System.out.println("Index out of bounds");
+        }
+        return p;
     }
 
     // get person from personList by using Person.getName()
@@ -102,7 +110,9 @@ public class Person {
             }
         }
         // if person is not found -- must be after iterating through every element in ArrayList
-        if (!found) System.out.printf("No person named %s. %n", name);
-        return null;
+        // if (!found) System.out.printf("No person named %s. %n", name);
+        // 12/01/2023 - using exception handling instead: 
+
+        throw new IllegalArgumentException();
     }
 }

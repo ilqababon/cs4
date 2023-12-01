@@ -21,6 +21,12 @@ public class nov7 {
         // since a Student and Teacher are also Persons, by this works by polymorphism
         Person m = new Student("Mark", 60, 10, "Photon");
         Person n = new Teacher("Nathan", "Adtech");
+        try {
+            Person x = Person.getPerson("Joshua");
+        }
+        catch(IllegalArgumentException e) {
+            System.out.println("Person does not exist");
+        }
 
         m.introduce();
         n.introduce();

@@ -35,6 +35,5 @@ public class Student extends Person {
     // either make the Student class itself into an abstract class, or implement the abstract method
     //@Override
     //public void work() {
-        // TODO
     //}
 }
