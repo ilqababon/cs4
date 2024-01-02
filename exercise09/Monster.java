@@ -125,20 +125,16 @@ public class Monster {
         }
     }
 
-    public static Monster selectMonster(String n) {
+    public static Monster selectMonster(String n) throws MonsterNotFoundException {
         boolean found = false;
-        try {
-            for (Monster m : monsterList) {
-                if (m.getName().equals(n)) {
-                    found = true;
-                    return m;
-                }
+        for (Monster m : monsterList) {
+            if (m.getName().equals(n)) {
+                found = true;
+                return m;
             }
-            if (found == false) {
-                throw new MonsterNotFoundException(n + " was not found.");
-            }
-        } catch (MonsterNotFoundException e) {
-            System.out.println(e.getMessage());
+        }
+        if (found == false) {
+            throw new MonsterNotFoundException(n + " was not found.");
         }
         return null;
     }

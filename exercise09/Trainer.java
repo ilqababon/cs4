@@ -3,44 +3,62 @@ package exercise09;
 import java.util.*;
 
 public class Trainer {
-	private String name;
+    private String name;
     private Monster activeMonster;
     private ArrayList<Monster> team;
 
-    public Trainer(String n){
+    public Trainer(String n) {
         this.name = n;
         this.activeMonster = null;
         this.team = new ArrayList<>();
     }
 
-    public Monster getActiveMonster(){
+    public String getName() {
+        return name;
+    }
+
+    public Monster getActiveMonster() {
         return activeMonster;
     }
-    public ArrayList<Monster> getTeam(){
+
+    public ArrayList<Monster> getTeam() {
         return team;
     }
 
-    public void capture(Monster m){
-        if(m.getHP() < m.getMaxHP()*0.2){
+    public void capture(Monster m) {
+        if (m.getHP() < m.getMaxHP() * 0.2) {
             team.add(m);
             System.out.println(this.getName() + " caught " + m.getName() + ".");
-        }
-        else{
+        } else {
             System.out.println(this.getName() + " failed to catch " + m.getName() + ".");
         }
     }
-    public void battle(Monster m){
+
+    public void battle(Monster m) {
         activeMonster.attack(m);
     }
-    public void battle(Trainer t){
+
+    public void battle(Trainer t) {
         activeMonster.attack(t.getActiveMonster());
     }
-    public void sureCapture(Monster m){
-        team.add(m);
-        System.out.printf("%s was successfully captured.", m.getName());
+
+    public void sureCapture(Monster m) throws AlreadyCapturedException, FullTeamException {
+        if (team.contains(m)) {
+            throw new AlreadyCapturedException(m.getName() + " was already captured.");
+        } else if (team.size() == 6) {
+            throw new FullTeamException("There are already 6 monsters in the team.");
+        } else {
+            team.add(m);
+            System.out.printf("%s was successfully captured.", m.getName());
+        }
     }
-    public void release(Monster m){
-        team.remove(m);
-        System.out.printf("%s was released from the team.", m.getName());
+
+    public void release(Monster m) throws NotInTeamException {
+        if (team.contains(m)) {
+            team.remove(m);
+            System.out.printf("%s was released from the team.", m.getName());
+        } else {
+            throw new NotInTeamException(m.getName() + " is not in the team.");
+        }
     }
 }
