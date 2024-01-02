@@ -117,10 +117,18 @@ public class Monster {
     
     public static Monster selectMonster(String n) {
         boolean found = false;
-        for(Monster m : monsterList){
-            if(m.getName().equals(n)){
-                return m;
+        try {
+            for(Monster m : monsterList){
+                if(m.getName().equals(n)){
+                    found = true;
+                    return m;
+                }
+            if (found = false) {
+                throw new MonsterNotFoundException(n + " was not found.");
             }
+        }
+        catch(MonsterNotFoundException e) {
+            System.out.println(e.getMessage());
         }
         return null;
     }
