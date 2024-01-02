@@ -134,7 +134,7 @@ public class Monster {
                     return m;
                 }
             }
-            if (found = false) {
+            if (found == false) {
                 throw new MonsterNotFoundException(n + " was not found.");
             }
         } catch (MonsterNotFoundException e) {
